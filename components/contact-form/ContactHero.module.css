@@ -1,0 +1,50 @@
+.container {
+  font-family: inter;
+  padding: 0px 6.4px;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  color: #171717;
+  letter-spacing: -0.06em;
+  user-select: none;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2.4rem;
+}
+
+.container:hover {
+  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container h1 {
+  margin: 6rem 0 0 0;
+  font-size: 1em;
+}
+
+.img {
+  height: 80px;
+  width: 230px;
+}
+
+@media screen and (min-width: 768px) {
+  .container:hover {
+    background: linear-gradient(90deg, #007cf0, #00dfd8);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .container h1 {
+    margin: 5rem 0 0 0;
+    font-size: 1.6em;
+  }
+
+  .img {
+    height: 150px;
+    width: 320px;
+  }
+}

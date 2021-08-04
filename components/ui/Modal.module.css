@@ -1,0 +1,48 @@
+.backdrop {
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 20;
+  overflow: hidden;
+}
+
+.modal {
+  background-color: white;
+  position: fixed;
+  top: 10%;
+  right: 10%;
+  bottom: 10%;
+  left: 10%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+  z-index: 20;
+}
+
+.modal section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn,
+.modal section button {
+  border: none;
+  font: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: inherit;
+  transition: all 0.2s;
+}
+
+.btn:hover,
+.modal section button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}

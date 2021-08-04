@@ -1,0 +1,52 @@
+.main {
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main ul {
+  padding: 0;
+}
+.main li {
+  margin: 8px;
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 80%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  line-height: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.img {
+  margin-right: 25px;
+  margin-top: 50px;
+  margin: auto;
+  height: 300px;
+  width: 370px;
+  overflow: hidden;
+}
+
+.img:hover {
+  height: 1200px;
+  width: 2800px;
+}
+
+.main a {
+  margin: 1rem;
+}
+
+.main a:hover {
+  font-weight: bold;
+  transition: all 0.3s;
+}
