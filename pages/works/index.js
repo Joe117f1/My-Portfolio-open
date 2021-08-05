@@ -37,7 +37,8 @@ export const getStaticProps = async () => {
                     gitHubLink: project.codeLink,
                     id: project._id.toString()
                 }))
-            }
+            },
+            revalidate: 10
         }
     } catch (error) {
         console.log(error.message);
