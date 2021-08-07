@@ -9,14 +9,14 @@ const ContactPage = () => {
             <Head>
                 <title>Contact Me</title>
                 <meta
-                    name="description"
-                    content="my page description..."
+                    name='description'
+                    content='my page description...'
                 />
             </Head>
             <ContactHero />
             <ContactForm />
         </Fragment>
     );
-};
+}
 
 export default ContactPage;

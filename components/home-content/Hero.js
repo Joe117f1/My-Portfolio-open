@@ -23,6 +23,6 @@ const Hero = () => {
             </div>
         </Fragment >
     );
-};
+}
 
 export default Hero;

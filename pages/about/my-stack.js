@@ -8,13 +8,13 @@ const MyStack = () => {
             <Head>
                 <title>My Tech Stack</title>
                 <meta
-                    name="description"
-                    content="my page description..."
+                    name='description'
+                    content='my page description...'
                 />
             </Head>
             <MyStackContent />
         </Fragment>
     );
-};
+}
 
 export default MyStack;

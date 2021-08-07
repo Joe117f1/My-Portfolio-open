@@ -12,8 +12,8 @@ const sendContactData = async (contactDetails) => {
 
     if (!response.ok) {
         throw new Error(data.message || 'Something went wrong..');
-    };
-};
+    }
+}
 
 const ContactForm = () => {
 
@@ -28,7 +28,7 @@ const ContactForm = () => {
                 setErrorMessage(null);
             }, 3000);
             return () => clearTimeout(timer);
-        };
+        }
     }, [requestStatus]);
 
     const submitHandler = async (data) => {
@@ -45,7 +45,7 @@ const ContactForm = () => {
             setRequestStatus('error');
             setErrorMessage(error.message);
         };
-    };
+    }
 
     const notificationStatus = {
         pending: {
@@ -74,7 +74,7 @@ const ContactForm = () => {
     let isFormReady;
     if (validName && validEmail && validMessage) {
         isFormReady = true;
-    };
+    }
     const btnReadyClass = isFormReady ? `${classes.ready}` : `${''}`;
 
     return (
@@ -144,6 +144,6 @@ const ContactForm = () => {
                 />)}
         </section>
     );
-};
+}
 
 export default ContactForm;

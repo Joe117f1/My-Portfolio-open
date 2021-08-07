@@ -8,4 +8,4 @@ export const getMongoConnection = async () => {
 
     const projectsCollection = db.collection('relevant-mongo-collection');
     return { client, projectsCollection };
-};
+}

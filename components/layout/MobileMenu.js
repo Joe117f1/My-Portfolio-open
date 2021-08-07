@@ -17,6 +17,6 @@ const MobileMenu = (props) => {
             </ul>
         </main>
     );
-};
+}
 
 export default MobileMenu;

@@ -24,7 +24,6 @@ const AboutContent = () => {
                         <Link href='about/my-stack'>my technological stack</Link>
                         <Link href='about/my-certificates'>Certificates</Link>
                         <a href='/assets/resume/my-cv.pdf' download>download cv.pdf</a>
-
                     </div>
                 </div>
                 <div className={classes.img} >
@@ -36,6 +35,6 @@ const AboutContent = () => {
             </div>
         </Fragment>
     );
-};
+}
 
 export default AboutContent;

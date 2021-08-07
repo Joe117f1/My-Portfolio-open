@@ -17,6 +17,6 @@ const ProjectList = (props) => {
             ))}
         </Fragment>
     );
-};
+}
 
 export default ProjectList;

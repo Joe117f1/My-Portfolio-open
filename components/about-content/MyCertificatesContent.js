@@ -38,12 +38,12 @@ const MyCertificatesContent = () => {
 
     const closeModalHandler = () => {
         setCertificateIdx(null);
-    };
+    }
 
     const certClickHandler = ({ currentTarget }) => {
         const certIdx = (currentTarget.getAttribute('t-whoami'));
         setCertificateIdx(certIdx);
-    };
+    }
 
     return (
         <div className={classes.main}>
@@ -76,6 +76,6 @@ const MyCertificatesContent = () => {
             <Link className={classes.test} href='/about/my-stack'>my technological stack</Link>
         </div>
     );
-};
+}
 
 export default MyCertificatesContent;

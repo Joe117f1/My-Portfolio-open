@@ -9,13 +9,13 @@ const MyCertificates = () => {
             <Head>
                 <title>My relevant certificates</title>
                 <meta
-                    name="description"
-                    content="my page description..."
+                    name='description'
+                    content='my page description...'
                 />
             </Head>
             <MyCertificatesContent />
         </Fragment>
     );
-};
+}
 
 export default MyCertificates;

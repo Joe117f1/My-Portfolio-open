@@ -14,6 +14,6 @@ const ContactHero = () => {
             </div>
         </div>
     );
-};
+}
 
 export default ContactHero;

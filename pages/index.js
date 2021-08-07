@@ -8,14 +8,14 @@ const HomePage = () => {
       <Head>
         <title>Yoav Hirshberg</title>
         <meta
-          name="description"
-          content="my page description..."
+          name='description'
+          content='my page description...'
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel='icon' href='/favicon.ico' />
       </Head>
       <Hero />
     </Fragment>
   );
-};
+}
 
 export default HomePage;

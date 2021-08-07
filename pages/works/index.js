@@ -9,21 +9,21 @@ const WorkGallery = (props) => {
             <Head>
                 <title>My Works</title>
                 <meta
-                    name="description"
-                    content="description about my works..."
+                    name='description'
+                    content='description about my works...'
                 />
             </Head>
             <GalleryContent projects={props.projects} />
         </Fragment>
     );
-};
+}
 
 export const getStaticProps = async () => {
     try {
         const { client, projectsCollection } = await getMongoConnection();
         if (!client || !projectsCollection) {
             throw new Error('could not connect to database.');
-        };
+        }
         const projects = await projectsCollection.find().toArray();
         client.close();
 
@@ -44,6 +44,6 @@ export const getStaticProps = async () => {
         console.log(error.message);
         return { notFound: true };
     };
-};
+}
 
 export default WorkGallery;

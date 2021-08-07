@@ -11,11 +11,11 @@ const ProjectItem = (props) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const onOpenModal = () => {
         setIsModalOpen(true);
-    };
+    }
 
     const closeModalHandler = () => {
         setIsModalOpen(false);
-    };
+    }
 
     const modalImage = `/assets/img/modal-img/${props.title}.jpg`;
 
@@ -58,6 +58,6 @@ const ProjectItem = (props) => {
             </div>
         </Card>
     );
-};
+}
 
 export default ProjectItem;

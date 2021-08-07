@@ -5,7 +5,7 @@ const HeroWord = (props) => {
     let fontSize;
     if (props.fontSize) {
         fontSize = props.fontSize;
-    };
+    }
 
     const cssClasses = fontSize ? `${classes.container} ${classes.fontSize}` : classes.container;
     return (
@@ -13,6 +13,6 @@ const HeroWord = (props) => {
             <Link href={props.path}>{props.text}</Link>
         </div>
     );
-};
+}
 
 export default HeroWord;

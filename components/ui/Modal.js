@@ -12,7 +12,7 @@ const BackDrop = props => {
             </div>
         </DomPortal>
     );
-};
+}
 
 const ModalOverlay = props => {
     return (
@@ -28,7 +28,7 @@ const ModalOverlay = props => {
             </div>
         </DomPortal>
     );
-};
+}
 
 const Modal = (props) => {
     return (
@@ -39,6 +39,6 @@ const Modal = (props) => {
             </ModalOverlay>
         </Fragment>
     );
-};
+}
 
 export default Modal;

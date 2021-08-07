@@ -20,6 +20,6 @@ const handler = async (req, res) => {
   await mail.send(data);
 
   res.status(200).json({ status: 'OK' });
-};
+}
 
 export default handler;

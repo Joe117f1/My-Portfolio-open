@@ -49,6 +49,6 @@ const MyStackContent = () => {
             </i>
         </div>
     );
-};
+}
 
 export default MyStackContent;

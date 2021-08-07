@@ -13,7 +13,7 @@ class MyDocument extends Document {
                 </body>
             </Html>
         );
-    };
-};
+    }
+}
 
 export default MyDocument;

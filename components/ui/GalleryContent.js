@@ -16,6 +16,6 @@ const GalleryContent = (props) => {
             </i>
         </main>
     );
-};
+}
 
 export default GalleryContent;

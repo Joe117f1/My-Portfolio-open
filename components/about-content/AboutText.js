@@ -42,6 +42,6 @@ const AboutText = () => {
             </p>
         </Fragment>
     );
-};
+}
 
 export default AboutText;

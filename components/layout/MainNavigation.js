@@ -12,11 +12,11 @@ const MainNavigation = () => {
 
   const addActiveClass = (path) => {
     return (router.pathname === path) ? classes.marked : '';
-  };
+  }
 
   const toggleMobileMenu = () => {
     setIsMobileMenu(!isMobileMenu);
-  };
+  }
 
   return (
     <Fragment>
@@ -52,6 +52,6 @@ const MainNavigation = () => {
       {isMobileMenu && <MobileMenu onToggleMenu={toggleMobileMenu} />}
     </Fragment>
   );
-};
+}
 
 export default MainNavigation;

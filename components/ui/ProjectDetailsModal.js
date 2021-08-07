@@ -3,7 +3,6 @@ import Modal from './Modal';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons';
-
 import classes from './ProjectDetailsModal.module.css';
 
 const ProjectDetailsModal = (props) => {
@@ -28,6 +27,6 @@ const ProjectDetailsModal = (props) => {
       </section>
     </Modal>
   );
-};
+}
 
 export default ProjectDetailsModal;
