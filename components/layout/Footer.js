@@ -25,6 +25,6 @@ const Footer = () => {
       <p>Copyright © 2021 Yoav Hirshberg. All rights reserved.</p>
     </footer>
   );
-}
+};
 
 export default Footer;

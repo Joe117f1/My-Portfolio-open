@@ -11,6 +11,6 @@ const DomPortal = ({ children, selector }) => {
   }, [selector]);
 
   return mounted ? createPortal(children, ref.current) : null;
-}
+};
 
 export default DomPortal;

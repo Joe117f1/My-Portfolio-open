@@ -27,6 +27,6 @@ const ProjectDetailsModal = (props) => {
       </section>
     </Modal>
   );
-}
+};
 
 export default ProjectDetailsModal;

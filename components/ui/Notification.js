@@ -8,11 +8,9 @@ const Notification = (props) => {
 
   if (status === 'pending') {
     statusClasses = classes.pending;
-  }
-  if (status === 'success') {
+  } else if (status === 'success') {
     statusClasses = classes.success;
-  }
-  if (status === 'error') {
+  } else if (status === 'error') {
     statusClasses = classes.error;
   }
 
@@ -28,6 +26,6 @@ const Notification = (props) => {
     </div>,
     document.getElementById('overlay-root')
   );
-}
+};
 
 export default Notification;

@@ -16,6 +16,6 @@ const HomePage = () => {
       <Hero />
     </Fragment>
   );
-}
+};
 
 export default HomePage;
