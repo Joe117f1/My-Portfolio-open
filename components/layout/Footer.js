@@ -16,11 +16,6 @@ const Footer = () => {
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
         </li>
-        <li>
-          <a target='_blank' href='https://www.facebook.com/yoav.hirshberg.3/' rel='noopener noreferrer'>
-            <FontAwesomeIcon icon={faFacebook} />
-          </a>
-        </li>
       </ul>
       <p>Copyright © 2021 Yoav Hirshberg. All rights reserved.</p>
     </footer>

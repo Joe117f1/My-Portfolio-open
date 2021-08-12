@@ -21,9 +21,9 @@ const AboutContent = () => {
             <AboutText />
           </div>
           <div className={classes.linksContainer}>
-            <Link href='about/my-stack'>my technological stack</Link>
+            <Link href='about/my-stack'>My technological stack</Link>
             <Link href='about/my-certificates'>Certificates</Link>
-            <a href='/assets/resume/my-cv.pdf' download>download cv.pdf</a>
+            <a href='/assets/resume/my-cv.pdf' download>Download cv.pdf</a>
           </div>
         </div>
         <div className={classes.img} >

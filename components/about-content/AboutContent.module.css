@@ -31,9 +31,9 @@
   margin: 1rem;
 }
 
-.linksContainer a:hover {
+.linksContainer a {
   font-weight: bold;
-  transition: all 0.3s;
+  color: #171717;
 }
 
 .img {
@@ -71,6 +71,11 @@
 
   .linksContainer a {
     margin: 1rem;
+  }
+
+  .linksContainer a:hover {
+    font-style: oblique;
+    transition: all 0.3s;
   }
 
   .img {

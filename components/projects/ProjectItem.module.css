@@ -52,14 +52,16 @@
   border: none;
   font: inherit;
   font-size: inherit;
-  color: inherit;
+  font-weight: bold;
+  color: #171717;
   background-color: inherit;
   transition: all 0.2s;
 }
 
 .btn:hover {
   cursor: pointer;
-  font-weight: bold;
+  font-style: oblique;
+  transition: all 0.3s;
 }
 
 .btn i:active,

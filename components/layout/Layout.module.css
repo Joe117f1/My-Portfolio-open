@@ -9,9 +9,8 @@
 
 @media screen and (min-width: 768px) {
   .main {
-    margin: 3rem auto;
+    margin: 0 auto 3rem;
     width: 90%;
     padding-top: 2rem;
-    margin-top: 0;
   }
 }
