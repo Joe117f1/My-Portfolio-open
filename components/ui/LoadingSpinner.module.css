@@ -13,8 +13,8 @@
   height: 35px;
   margin: 8px;
   border-radius: 50%;
-  border: 3px solid #171717;
-  border-color: #171717 transparent #171717 transparent;
+  border: 3px solid var(--page-black);
+  border-color: var(--page-black) transparent var(--page-black) transparent;
   animation: spinner 1.2s linear infinite;
 }
 

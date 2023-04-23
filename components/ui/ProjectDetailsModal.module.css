@@ -20,7 +20,7 @@
   font: inherit;
   font-size: inherit;
   font-weight: bold;
-  color: #171717;
+  color: var(--page-black);
   background-color: inherit;
   transition: all 0.2s;
   margin-bottom: 2px;

@@ -1,17 +1,49 @@
 .container {
-  font-family: inter;
   padding: 0px 6.4px;
   font-size: 6rem;
   font-weight: 800;
   margin: 0;
-  color: #171717;
   letter-spacing: -0.06em;
   user-select: none;
+  --bg-size: 400%;
+  --color-one: var(--black);
+  --color-two: var(--page-black);
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1.3s ease-out;
+  animation: move-bg 10s infinite linear;
+}
+
+.containerStart {
+  background: var(--gradientblue90);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.9s ease-out;
 }
 
 .container:hover {
   cursor: pointer;
-  background: linear-gradient(90deg, #7928ca, #ff0080);
+  --bg-size: 400%;
+  --color-one: #ff0080;
+  --color-two: #7928ca;
+  background: linear-gradient(
+      90deg,
+      var(--color-one),
+      var(--color-two),
+      var(--color-one)
+    )
+    0 0 / var(--bg-size) 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 1.3s ease-out;
+  animation: move-bg 4s infinite linear;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -24,5 +56,14 @@
   .container {
     font-size: 10rem;
     justify-content: space-between;
+  }
+  .fontSize {
+    font-size: 3rem;
+  }
+}
+
+@keyframes move-bg {
+  to {
+    background-position: var(--bg-size) 0;
   }
 }

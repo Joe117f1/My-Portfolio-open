@@ -1,0 +1,38 @@
+.container {
+  margin-top: 18rem;
+  margin-bottom: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container h1 {
+  font-size: 2rem;
+  margin: 1.2rem 0 0 0;
+  line-height: 1.15;
+  font-size: 3rem;
+}
+
+.container h2 {
+  font-size: 2rem;
+}
+
+.title,
+.container h2 {
+  font-family: inter;
+  background: var(--gradientOrage90);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.contact a {
+  font-size: 2.2rem;
+  transition: all 0.3s;
+  color: var(--temporary-grey);
+}
+
+.contact a:hover {
+  cursor: pointer;
+  color: var(--golden-sand);
+}

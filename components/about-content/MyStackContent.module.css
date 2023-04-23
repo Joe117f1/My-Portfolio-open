@@ -4,13 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.front {
-  margin-left: 3.5rem;
-}
-.back {
-  margin-left: 1rem;
+  color: var(--variable-blue);
 }
 
 .container h2 {
@@ -26,13 +20,18 @@
   list-style: none;
 }
 
+.container a {
+  color: var(--return-purple);
+}
+
 .container a:hover {
-  font-weight: bold;
+  color: var(--nav-bar-li-hover);
+  cursor: pointer;
   transition: all 0.3s;
 }
 
 .border {
-  border-bottom: 1px solid #eaeaea;
+  border-bottom: 1px solid var(--pale-grey);
 }
 
 .container i {

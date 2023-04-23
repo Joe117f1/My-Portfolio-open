@@ -1,8 +1,13 @@
-import { useRef, useEffect, useState } from 'react';
+import { useRef, useEffect, useState, ReactNode } from 'react';
 import { createPortal } from 'react-dom';
 
-const DomPortal = ({ children, selector }) => {
-  const ref = useRef();
+interface Props {
+  selector: string;
+  children: ReactNode;
+}
+
+export const DomPortal = ({ children, selector }: Props) => {
+  const ref = useRef<any>(); //TODO: change any type
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -12,5 +17,3 @@ const DomPortal = ({ children, selector }) => {
 
   return mounted ? createPortal(children, ref.current) : null;
 };
-
-export default DomPortal;
