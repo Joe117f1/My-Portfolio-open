@@ -1,11 +1,11 @@
 import { MongoClient } from 'mongodb';
 
-const connectionString = process.env.customKey;
+const connectionString = process.env.customKey as string;
 
-export const getMongoConnection = async () => {
+export const getMongoConnection = async (collection: string) => {
   const client = await MongoClient.connect(connectionString);
   const db = client.db();
 
-  const projectsCollection = db.collection('relevant-mongo-collection');
-  return { client, projectsCollection };
+  const dataCollection = db.collection(collection);
+  return { client, dataCollection };
 };
