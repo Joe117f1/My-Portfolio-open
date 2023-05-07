@@ -1,7 +1,8 @@
-const mail = require('@sendgrid/mail');
-mail.setApiKey(process.env.sendgridKey);
+import type { NextApiRequest, NextApiResponse } from 'next';
+import mail from '@sendgrid/mail';
+mail.setApiKey(process.env.sendgridKey!);
 
-const handler = async (req, res) => {
+const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const body = JSON.parse(req.body);
   const message = `
     Name: ${body.name}\r\n
@@ -10,8 +11,8 @@ const handler = async (req, res) => {
   `;
 
   const data = {
-    to: 'myEmail@Email.com',
-    from: 'emailh@Email.com',
+    to: 'myEmail@email.com',
+    from: 'email.com',
     subject: `New message from ${body.name}`,
     text: message,
     html: message.replace(/\r\n/g, '<br />'),

@@ -1,19 +1,18 @@
-import { Fragment } from 'react';
 import Head from 'next/head';
-import AboutContent from '../../components/about-content/AboutContent';
+import { AboutContent } from '../../components/about-content/AboutContent';
 
 const About = () => {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>About Myself</title>
         <meta
           name='description'
-          content='my page description...'
+          content='Meta tag content for the about page...'
         />
       </Head>
       <AboutContent />
-    </Fragment>
+    </>
   );
 };
 

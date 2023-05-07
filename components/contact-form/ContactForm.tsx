@@ -112,7 +112,7 @@ export const ContactForm = () => {
   if (validName && validEmail && validMessage) {
     isFormReady = true;
   }
-  const btnReadyClass = isFormReady ? `${classes.ready}` : `${''}`;
+  const btnReadyClass = isFormReady ? `${classes.ready}` : '';
 
   return (
     <>
