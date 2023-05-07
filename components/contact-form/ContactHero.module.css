@@ -4,7 +4,7 @@
   font-size: 2rem;
   font-weight: 800;
   text-align: center;
-  color: #171717;
+  color: var(--page-black);
   letter-spacing: -0.06em;
   user-select: none;
   transition: 0.3s;
@@ -16,7 +16,7 @@
 }
 
 .container:hover {
-  background: linear-gradient(90deg, #007cf0, #00dfd8);
+  background: var(--gradientblue90);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -33,7 +33,7 @@
 
 @media screen and (min-width: 768px) {
   .container:hover {
-    background: linear-gradient(90deg, #007cf0, #00dfd8);
+    background: var(--gradientblue90);
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }

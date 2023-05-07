@@ -1,0 +1,68 @@
+.cover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 220px;
+  width: 220px;
+}
+
+.react {
+  background: url('/assets/img/site-img/AboutBanner/react-2.svg');
+}
+
+.nextjs {
+  background: url('/assets/img/site-img/AboutBanner/nextjs.svg');
+}
+
+.mongo {
+  background: url('/assets/img/site-img/AboutBanner/MongoDB.svg');
+}
+
+.docker {
+  background: url('/assets/img/site-img/AboutBanner/docker.svg');
+}
+
+.nodejs {
+  background: url('/assets/img/site-img/AboutBanner/nodejs.svg');
+}
+
+.react,
+.nextjs,
+.mongo,
+.docker,
+.nodejs {
+  display: flex;
+  height: 70px;
+  width: 70px;
+  margin: 20px;
+  padding: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.container a {
+  font-size: 5rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  color: var(--dark-blue);
+}
+
+.container:hover a {
+  cursor: pointer;
+  color: var(--golden-sand);
+}
+
+.container h4 {
+  font-family: inter;
+  margin: 0;
+  text-align: center;
+}
+
+.container:hover h4 {
+  cursor: pointer;
+  background: var(--gradientOrage90);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

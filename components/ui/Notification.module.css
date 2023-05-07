@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  box-shadow: 0 1px 8px #00000033;
+  box-shadow: 0 1px 8px var(--shadow);
   position: fixed;
   height: 5rem;
   bottom: 35%;
@@ -21,17 +21,17 @@
 }
 
 .pending {
-  background: linear-gradient(90deg, #007cf0b4, #00e0d9b4);
+  background: var(--transparent-pendning);
   color: black;
 }
 .success {
-  background-color: #33dd33af;
-  color: black;
+  background-color: var(--transparent-success);
+  color: var(--black);
 }
 
 .error {
-  background-color: #ff0000af;
-  color: black;
+  background-color: var(--trnasparent-error);
+  color: var(--black);
 }
 
 .spinner {

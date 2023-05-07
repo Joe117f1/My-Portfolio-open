@@ -4,17 +4,23 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #171717;
+  background-color: var(--transparent-black-desktop);
   padding: 0 10%;
   position: fixed;
   z-index: 10;
   top: 0;
+  font-family: menlo;
 }
 
 .logo {
   font-size: 1.6rem;
-  color: white;
+  color: var(--temporary-grey);
   font-weight: bold;
+}
+
+.logo a {
+  font-weight: normal;
+  padding-left: 6px;
 }
 
 .header ul {
@@ -22,31 +28,38 @@
 }
 
 .header a:hover,
-.header a:active,
 .header a.active {
-  color: #bbaa61;
+  color: var(--nav-bar-li-hover);
 }
 
 .marked {
-  color: #bbaa61;
+  color: var(--nav-bar-li-marked);
 }
 
 .btn {
   background-color: transparent;
   border: none;
-  color: white;
+  color: var(--white);
   font-size: 1.5rem;
 }
 
 .btn:active,
 .btn:focus,
 .btn :hover {
-  color: #dbc896;
+  color: var(--golden-sand);
 }
 
 @media screen and (min-width: 768px) {
   .logo {
     font-size: 2rem;
+  }
+
+  .logo:hover {
+    cursor: pointer;
+  }
+
+  .logo:hover a {
+    color: var(--nav-bar-li-hover);
   }
 
   .header ul {
@@ -61,7 +74,7 @@
     margin-left: 3rem;
     text-decoration: none;
     font-size: 1.5rem;
-    color: white;
+    color: var(--nav-bar-li);
   }
 
   .btn {

@@ -3,14 +3,13 @@
   max-height: 100vh;
   display: flex;
   flex-direction: column;
-  color: #171717;
+  color: var(--page-black);
   margin-bottom: 0;
   margin-top: 4.5rem;
   align-items: center;
-  overflow: none;
 }
 
-.container img {
+.container .imgContainerMobile {
   min-width: 375px;
   height: 250px;
   object-fit: cover;
@@ -33,11 +32,15 @@
     justify-content: space-between;
   }
 
-  .container img {
+  .container .imgContainer {
     min-width: 250px;
     min-height: 500px;
     object-fit: cover;
     overflow: hidden;
+  }
+
+  .imgContainerMobile {
+    display: none;
   }
 }
 
@@ -48,10 +51,14 @@
     margin-bottom: auto;
   }
 
-  .container img {
+  .container .imgContainer {
     min-width: 500px;
     min-height: 650px;
     object-fit: cover;
     overflow: hidden;
+  }
+
+  .imgContainerMobile {
+    display: none;
   }
 }

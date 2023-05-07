@@ -1,7 +1,7 @@
 .backdrop {
   overflow: hidden;
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: var(--backdrop-black);
   top: 0;
   right: 0;
   bottom: 0;
@@ -11,7 +11,7 @@
 }
 
 .modal {
-  background-color: white;
+  background-color: var(--white);
   position: fixed;
   top: 10%;
   right: 10%;

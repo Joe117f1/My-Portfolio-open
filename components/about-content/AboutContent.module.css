@@ -1,13 +1,14 @@
 .title {
   margin: 5rem 1rem 0.5rem;
   align-self: normal;
+  color: var(--variable-blue);
 }
 
 .container {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #bbaa611f;
+  background-color: var(--fde-brown);
   font-size: 1rem;
   margin-bottom: 10px;
 }
@@ -33,7 +34,7 @@
 
 .linksContainer a {
   font-weight: bold;
-  color: #171717;
+  color: var(--page-black);
 }
 
 .img {
@@ -44,12 +45,13 @@
 
 @media screen and (min-width: 768px) {
   .title {
-    margin-top: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
   }
 
   .container {
     flex-direction: row;
-    margin: 1rem;
+    margin: 0.4rem 1rem 1rem;
   }
 
   .subContainer {
@@ -79,6 +81,9 @@
   }
 
   .img {
+    background-image: url('/assets/img/site-img/about-photo.jpeg');
+    background-size: 100%;
+    background-repeat: no-repeat;
     min-width: 450px;
     max-width: 600px;
     max-height: 650px;
